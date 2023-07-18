@@ -1,15 +1,13 @@
 {
-    'name': 'Odoo Academy',
-    'summary': """Module to handle courses and sessions""",
-    'description': """Modulet o handle 
-        -Courses
-        -Session
-        -Attendees
-        """,
+    'name': 'Motorcycle Registry',
+    'summary': """Manage Registration of Motorcycles""",
+    'description': """Motorcycle Registry
+====================
+This Module is used to keep track of the Motorcycle Registration and Ownership of each motorcycled of the brand.""",
     'license': 'OPL-1',
     'author': 'dizr',
-    'website': 'www.odoo.com',
-    'category': 'Custom Modules/Technical Training',
+    'website': 'https://github.com/dizr-odoo/tech-training',
+    'category': 'Kawiil/Kawiil',
     'depends': ['base'],
     'data': [],
     'demo': [],
