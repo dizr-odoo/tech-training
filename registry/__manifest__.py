@@ -1,5 +1,5 @@
 {
-    'name': 'test tutorial',
+    'name': 'Motorcycle Registry',
     'summary': """Manage Registration of Motorcycles""",
     'description': """Motorcycle Registry
 ====================
