@@ -7,6 +7,7 @@ class Course(models.Model):
     _name = "motorcycle.registry"
     _description = "Course Info"
     _rec_name = "first_name"
+    _sql_constraints = [('unique_vin', 'unique(vin)', 'The VIN must be unique.'),]
 
     registry_number = fields.Char(required=True, default="MRN0000", copy=False)
     vin = fields.Char(required=True)
@@ -24,6 +25,7 @@ class Course(models.Model):
             if vals.get('registry_number', ('MRN0000')) == ('MRN0000'):
                 vals['registry_number'] = self.env['ir.sequence'].next_by_code('registry.number')
         return super().create(vals_list)
+
 
     @api.constrains('vin')
     def _check_vin(self):
