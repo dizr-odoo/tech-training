@@ -5,7 +5,7 @@
             <t t-call="website.layout">
                 <t t-set="title">Academy</t>
                 <div class="oe_structure">
-                    <div class="container">
+                    <div class="container ">
                         <h2>Motorcycle Comparison</h2>
                         <div class="container w-75">
                         <!--
@@ -40,6 +40,7 @@
                                 
                                 <div class="d-flex flex-column align-items-end">
                             
+                                    <div class="flex-grow-1 flex-shrink-1" style="height:100px;"></div>
                                     <div class="flex-grow-1 flex-shrink-1"><h5>Specs</h5></div>
                                     <div class="flex-grow-1 flex-shrink-1"><h5>Launch Date</h5></div>
                                     <div class="flex-grow-1 flex-shrink-1"><h5>Range</h5></div>
@@ -53,6 +54,7 @@
                                 <t t-foreach="motorcycle_products" t-as="mc_prod">
                                     <div class="d-flex flex-column align-items-left">
                                 
+                                        <div class="flex-grow-1 flex-shrink-1" style="height:100px;"><img t-if="mc_prod.image_1920" t-att-src="image_data_uri(mc_prod.image_1920)" width="100px" /></div>
                                         <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.name"/></div>
                                         <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.launch_date" /></div>
                                         <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.range" /></div>
@@ -61,7 +63,6 @@
                                         <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.top_speed" /></div>
                                         <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.battery_capacity" /></div>
                                         <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.curb_weight" /></div>
-            
                                     </div>
                                 </t>
 
