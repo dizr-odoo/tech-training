@@ -13,6 +13,7 @@ class Product(models.Model):
     curb_weight = fields.Float()
     make = fields.Char()
     model = fields.Char()
+    launch_date = fields.Date()
 
     detailed_type = fields.Selection(selection_add=[
         ('motorcycle', 'Motorcycle'),

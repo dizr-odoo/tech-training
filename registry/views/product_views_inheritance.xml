@@ -14,7 +14,7 @@
                                 <field name="model" />
                                 <!--<field name="year" />-->
                                 <field name="curb_weight" />
-                                <!--<field name="launch_date" />-->
+                                <field name="launch_date" />
                             </group>
                             <group string="Motor information">
                                 <field name="horsepower" />

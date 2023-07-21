@@ -8,7 +8,7 @@ This Module is used to keep track of the Motorcycle Registration and Ownership o
     'author': 'dizr',
     'website': 'https://github.com/dizr-odoo/tech-training',
     'category': 'Kawiil/Kawiil',
-    'depends': ['stock'],
+    'depends': ['stock', 'website'],
     'data': [
         'security/registry_groups.xml',
         'security/registry_security.xml',
@@ -16,9 +16,9 @@ This Module is used to keep track of the Motorcycle Registration and Ownership o
         'data/registry_data.xml',
         'views/registry_menuitems.xml',
         'views/registry_views.xml',
-        'views/product_views_inheritance.xml'
+        'views/product_views_inheritance.xml',
+        'views/motorcycle_products_web_templates.xml',
     ],
-    'demo': ['demo/course_demo.xml',
-             ],
+    'demo':[], # ['demo/course_demo.xml',],
     'application': True,
 }

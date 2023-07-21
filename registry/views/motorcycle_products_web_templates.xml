@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="compare_website">
+            <t t-call="website.layout">
+                <t t-set="title">Academy</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h2>Motorcycle Comparison</h2>
+                        <div class="container w-75">
+                        <!--
+
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>Specs</th>
+                                    <th>Launch Date</th>
+                                    <th>Range</th>
+                                    <th>Horsepower</th>
+                                    <th>Torque</th>
+                                    <th>Top Speed</th>
+                                    <th>Battery Capacity</th>
+                                    <th>Curb Weight</th>
+                                </tr>
+                                <t t-foreach="motorcycle_products" t-as="mc_prod">
+                                    <tr>
+                                        <td><t t-out="mc_prod.name"/></td>
+                                        <td><t t-out="mc_prod.launch_date" /></td>
+                                        <td><t t-out="mc_prod.range" /></td>
+                                        <td><t t-out="mc_prod.horsepower" /></td>
+                                        <td><t t-out="mc_prod.torque" /></td>
+                                        <td><t t-out="mc_prod.top_speed" /></td>
+                                        <td><t t-out="mc_prod.battery_capacity" /></td>
+                                        <td><t t-out="mc_prod.curb_weight" /></td>
+                                    </tr>
+                                </t>
+                        
+                            </table>
+                        -->
+                            <div class="d-flex flex-row justify-content-between">
+                                
+                                <div class="d-flex flex-column align-items-end">
+                            
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Specs</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Launch Date</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Range</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Horsepower</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Torque</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Top Speed</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Battery Capacity</h5></div>
+                                    <div class="flex-grow-1 flex-shrink-1"><h5>Curb Weight</h5></div>
+        
+                                </div>
+                                <t t-foreach="motorcycle_products" t-as="mc_prod">
+                                    <div class="d-flex flex-column align-items-left">
+                                
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.name"/></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.launch_date" /></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.range" /></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.horsepower" /></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.torque" /></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.top_speed" /></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.battery_capacity" /></div>
+                                        <div class="flex-grow-1 flex-shrink-1"><t t-out="mc_prod.curb_weight" /></div>
+            
+                                    </div>
+                                </t>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
